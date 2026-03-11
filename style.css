@@ -59,7 +59,7 @@ width:100%;
 
 .hero{
 height:300px;
-background:url(images/profile.jpg);
+background:url(images/resume.jpeg);
 background-size:cover;
 display:flex;
 flex-direction:column;
