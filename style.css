@@ -121,19 +121,25 @@ nav a:hover {
 }
 
 /* SOCIALS */
-.socials {
-  margin-top: 20px;
-}
-
-.socials a {
+.social-icons a {
   color: white;
-  margin-right: 15px;
   font-size: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.socials a:hover {
+.social-icons a:hover {
   color: #00ffc3;
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0,255,195,0.4);
 }
 
 /* SECTIONS */
