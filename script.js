@@ -9,7 +9,7 @@ function toggleMenu() {
 }
 
 // TYPING EFFECT
-const words = ["Shumaila", "Web Developer", "Creative Coder"];
+const words = ["Shumaila", "a Web Developer", " a Creative Coder"];
 let i = 0, j = 0, current = "", deleting = false;
 
 function type() {
