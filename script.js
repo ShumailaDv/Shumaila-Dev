@@ -1,41 +1,47 @@
-// ===== THEME TOGGLE =====
-const toggle = document.getElementById("themeToggle");
-toggle.onclick = () => {
-  document.body.classList.toggle("light");
-};
+// Smooth Scroll
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+}
 
-// ===== TYPING EFFECT =====
-const words = ["Web Developer", "Frontend Expert", "Freelancer"];
-let i = 0, j = 0, current = "", isDeleting = false;
+// Typing Effect
+const text = ["Shumaila", "Web Developer", "Frontend Expert"];
+let i = 0, j = 0;
+let current = "";
+let isDeleting = false;
 
-function typing() {
-  current = words[i];
+function type() {
+  current = text[i];
   
   if (!isDeleting) {
-    document.querySelector(".typing").textContent = current.slice(0, j++);
+    document.getElementById("typing").textContent = current.substring(0, j++);
     if (j > current.length) {
       isDeleting = true;
-      setTimeout(typing, 1000);
+      setTimeout(type, 1000);
       return;
     }
   } else {
-    document.querySelector(".typing").textContent = current.slice(0, j--);
-    if (j === 0) {
+    document.getElementById("typing").textContent = current.substring(0, j--);
+    if (j < 0) {
       isDeleting = false;
-      i = (i + 1) % words.length;
+      i = (i + 1) % text.length;
     }
   }
-  setTimeout(typing, isDeleting ? 50 : 100);
-}
-typing();
 
-// ===== SCROLL ANIMATION =====
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+
+// Scroll Reveal
+const fades = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+  fades.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add("show");
     }
   });
 });
-
-document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
