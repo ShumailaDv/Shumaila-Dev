@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NEON Dev</title>
+  <title>Shumaila | Web Developer</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 
   <!-- Icons -->
@@ -14,6 +13,7 @@
   <!-- Particles -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
+
 <body>
 
 <!-- LOADER -->
@@ -21,7 +21,7 @@
   <h1>Loading...</h1>
 </div>
 
-<!-- PARTICLES BG -->
+<!-- PARTICLES -->
 <div id="particles-js"></div>
 
 <!-- NAVBAR -->
@@ -34,7 +34,9 @@
     <ul id="menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -42,8 +44,13 @@
 
 <!-- HERO -->
 <section id="home" class="hero">
-  <h1>I’m <span id="typing"></span></h1>
-  <p>Building modern web experiences</p>
+  <h1>I build <span id="typing"></span></h1>
+  <p>Helping businesses grow with modern & high-converting websites</p>
+
+  <div class="cta">
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="#projects" class="btn-outline">View Work</a>
+  </div>
 
   <div class="socials">
     <i class="fab fa-github"></i>
@@ -54,7 +61,32 @@
 <!-- ABOUT -->
 <section id="about" class="fade glass">
   <h2>About Me</h2>
-  <p>Passionate web developer creating modern, responsive and fast websites.</p>
+  <p>
+    I am a professional web developer specializing in modern, responsive and fast websites.
+    I help businesses grow online with high-quality web solutions.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="fade">
+  <h2>What I Offer</h2>
+
+  <div class="services-grid">
+    <div class="service">
+      <h3>Website Development</h3>
+      <p>Modern, responsive and fast websites</p>
+    </div>
+
+    <div class="service">
+      <h3>UI/UX Design</h3>
+      <p>Clean and user-friendly designs</p>
+    </div>
+
+    <div class="service">
+      <h3>Landing Pages</h3>
+      <p>High-converting pages for business growth</p>
+    </div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
@@ -62,24 +94,74 @@
   <h2>Projects</h2>
 
   <div class="projects-grid">
+
     <div class="card">
       <div class="overlay">View Project</div>
-      <h3>Portfolio</h3>
+      <h3>Portfolio Website</h3>
+      <p>Modern responsive design</p>
+      <a href="#" target="_blank">Live Demo</a>
     </div>
 
     <div class="card">
       <div class="overlay">View Project</div>
-      <h3>E-Commerce</h3>
+      <h3>Business Website</h3>
+      <p>Client-focused landing page</p>
+      <a href="#" target="_blank">Live Demo</a>
     </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="fade">
+  <h2>What Clients Say</h2>
+
+  <div class="testimonial">
+    <p>"Amazing work! Very professional and fast delivery."</p>
+    <h4>- Client Name</h4>
+  </div>
+
+  <div class="testimonial">
+    <p>"Highly recommended for modern websites."</p>
+    <h4>- Client Name</h4>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="fade glass">
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <h2>Let's Work Together</h2>
+
+  <form id="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
+<!-- EMAIL JS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  emailjs.send("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",{
+    from_name: this[0].value,
+    email: this[1].value,
+    message: this[2].value
+  }).then(() => {
+    alert("Message Sent Successfully!");
+  });
+});
+</script>
+
+<!-- MAIN JS -->
 <script src="script.js"></script>
+
 </body>
 </html>
