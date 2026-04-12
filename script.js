@@ -1,15 +1,27 @@
-// LOADER
-window.onload = () => {
-  document.getElementById("loader").style.display = "none";
-};
+// ================= LOADER =================
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  loader.style.opacity = "0";
 
-// MENU
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 500);
+});
+
+// ================= MOBILE MENU =================
 function toggleMenu() {
   document.getElementById("menu").classList.toggle("active");
 }
 
-// TYPING EFFECT
-const words = ["Shumaila", "a Web Developer", " a Creative Coder"];
+// Auto close menu on click (mobile UX)
+document.querySelectorAll("#menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("active");
+  });
+});
+
+// ================= TYPING EFFECT =================
+const words = ["Shumaila", "a Web Developer", "a Creative Coder"];
 let i = 0, j = 0, current = "", deleting = false;
 
 function type() {
@@ -19,7 +31,7 @@ function type() {
     document.getElementById("typing").textContent = current.substring(0, j++);
     if (j > current.length) {
       deleting = true;
-      setTimeout(type, 1000);
+      setTimeout(type, 1200);
       return;
     }
   } else {
@@ -30,26 +42,83 @@ function type() {
     }
   }
 
-  setTimeout(type, deleting ? 50 : 100);
+  setTimeout(type, deleting ? 50 : 90);
 }
+
 type();
 
-// SCROLL ANIMATION
+// ================= SCROLL ANIMATION =================
 const elements = document.querySelectorAll(".fade");
 
-window.addEventListener("scroll", () => {
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+
   elements.forEach(el => {
-    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+    const boxTop = el.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
       el.classList.add("show");
     }
   });
-});
+};
 
-// PARTICLES
+window.addEventListener("scroll", revealOnScroll);
+
+// Run once on load
+revealOnScroll();
+
+// ================= PARTICLES =================
 particlesJS("particles-js", {
   particles: {
-    number: { value: 60 },
-    size: { value: 3 },
-    move: { speed: 2 }
-  }
+    number: {
+      value: 80,
+      density: { enable: true, value_area: 800 }
+    },
+    color: { value: "#00ffc3" },
+    shape: { type: "circle" },
+    opacity: {
+      value: 0.5,
+      random: true
+    },
+    size: {
+      value: 3,
+      random: true
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#00ffc3",
+      opacity: 0.3,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "none",
+      random: true,
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "grab"
+      },
+      onclick: {
+        enable: true,
+        mode: "push"
+      }
+    },
+    modes: {
+      grab: {
+        distance: 140,
+        line_linked: { opacity: 0.5 }
+      },
+      push: {
+        particles_nb: 4
+      }
+    }
+  },
+  retina_detect: true
 });
