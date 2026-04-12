@@ -122,3 +122,7 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
+// ================= BOOK CALL =================
+function bookCall() {
+  window.open("https://calendly.com/your-link", "_blank");
+}
