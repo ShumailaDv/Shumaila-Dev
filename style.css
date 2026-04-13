@@ -265,6 +265,15 @@ form button {
 }
 
 .build-box {
+  background: linear-gradient(135deg, #1a2a44, #0f1c2e);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 40px rgba(0,255,195,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+
   display: flex;
   flex-direction: column;
   align-items: center;
