@@ -332,18 +332,6 @@ form button {
   color: #666;
 }
 
-/* ANIMATION */
-.fade {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* FADE ANIMATION */
 .fade {
   opacity: 0;
