@@ -196,6 +196,7 @@ h2 {
   transform: translateY(-10px);
   box-shadow: 0 0 20px #00ffc3;
 }
+
 /* frontend development */
 
 .skills-intro {
@@ -203,16 +204,13 @@ h2 {
   margin-bottom: 30px;
   opacity: 0.8;
 }
-
-
 .skills-grid {
   max-width: 800px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
 }
-
 
 .skill {
   padding: 0;
