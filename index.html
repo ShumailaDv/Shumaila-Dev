@@ -42,7 +42,7 @@
   </nav>
 </header>
 
-<!-- HERO (FULL WIDTH OK) -->
+<!-- HERO -->
 <section id="home" class="hero">
   <div class="container">
     <h1>I am <span id="typing"></span></h1>
@@ -53,29 +53,12 @@
       <a href="#projects" class="btn-outline">View Work</a>
     </div>
 
-    <!-- Social Links -->
     <div class="social-icons">
-
-      <a href="https://github.com/ShumailaDv" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-
-      <a href="https://linkedin.com/in/shumaila-m-118617203/" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-
-      <a href="mailto:shumailab011@gmail.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-
-      <a href="tel:+923044046860">
-        <i class="fas fa-phone"></i>
-      </a>
-
-      <a href="https://yourwebsite.com" target="_blank">
-        <i class="fas fa-globe"></i>
-      </a>
-
+      <a href="https://github.com/ShumailaDv" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/shumaila-m-118617203/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:shumailab011@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+923044046860"><i class="fas fa-phone"></i></a>
+      <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i></a>
     </div>
   </div>
 </section>
@@ -84,10 +67,7 @@
 <section id="about" class="fade">
   <div class="container glass">
     <h2>About Me</h2>
-    <p>
-      I am a professional web developer specializing in modern, responsive and fast websites.
-      I help businesses grow online with high-quality web solutions.
-    </p>
+    <p>I am a professional web developer specializing in modern, responsive and fast websites.</p>
   </div>
 </section>
 
@@ -97,7 +77,6 @@
     <h2>What I Offer</h2>
 
     <div class="services-grid">
-
       <div class="service">
         <h3>Website Development</h3>
         <p>Modern, responsive and fast websites</p>
@@ -112,7 +91,6 @@
         <h3>Landing Pages</h3>
         <p>High-converting pages for business growth</p>
       </div>
-
     </div>
   </div>
 </section>
@@ -123,19 +101,17 @@
     <h2>Projects</h2>
 
     <div class="projects-grid">
-
       <div class="card">
         <h3>Portfolio Website</h3>
         <p>Modern responsive design</p>
-        <a href="#" target="_blank">Live Demo</a>
+        <a href="#">Live Demo</a>
       </div>
 
       <div class="card">
         <h3>Business Website</h3>
         <p>Client-focused landing page</p>
-        <a href="#" target="_blank">Live Demo</a>
+        <a href="#">Live Demo</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -154,7 +130,6 @@
       <p>"Highly recommended for modern websites."</p>
       <h4>- Client Name</h4>
     </div>
-
   </div>
 </section>
 
@@ -162,14 +137,11 @@
 <section class="build-section fade">
   <div class="container">
     <div class="build-box">
-
       <div class="icon">📅</div>
 
       <h1>Let's Build Something Great Together</h1>
 
-      <p>
-        Book a free 15-minute call to discuss your project.
-      </p>
+      <p>Book a free 15-minute call to discuss your project.</p>
 
       <div class="cta-info">
         <span>⏱ 15 Minutes</span>
@@ -180,53 +152,28 @@
       <button class="cta-btn" onclick="bookCall()">📅 Book a Free Call</button>
 
       <small>No sales pitch, just a friendly conversation</small>
-
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-  <section id="contact" class="contact fade">
-    
-    <div class="connect-right">
+<section id="contact" class="contact fade">
+  <div class="connect-right">
     <div class="connect-box">
-
       <h2>Let’s Connect</h2>
-
       <p>Ready to work together? Reach out anytime.</p>
 
       <a href="mailto:shumailab011@gmail.com" class="connect-btn">
         Send Message
       </a>
-      
     </div>
   </div>
 </section>
 
-<!-- EMAIL JS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-(function(){
-  emailjs.init("YOUR_PUBLIC_KEY");
-})();
-
-document.getElementById("contact-form").addEventListener("submit", function(e){
-  e.preventDefault();
-
-  emailjs.send("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",{
-    from_name: this[0].value,
-    email: this[1].value,
-    message: this[2].value
-  }).then(() => {
-    alert("Message Sent Successfully!");
-  });
-});
-</script>
-  <footer>
-    © 2026 Shumaila | Portfolio
+<!-- FOOTER -->
+<footer>
+  © 2026 Shumaila | Portfolio
 </footer>
-
 
 </body>
 </html>
