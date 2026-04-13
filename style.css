@@ -239,7 +239,8 @@ h2 {
 .progress.html { width: 95%; background: #61dafb; }
 .progress.css { width: 90%; background: #61dafb; }
 .progress.js { width: 85%; background: #61dafb; }
-.progress.react { width: 75%; background: #61dafb; }
+.progress.react { width: 80%; background: #61dafb; }
+
 /* PROJECTS */
 .projects-grid {
   display: grid;
