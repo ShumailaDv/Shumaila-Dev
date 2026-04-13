@@ -1,7 +1,9 @@
 // ================= LOADER =================
-const loader = document.getElementById("loader");
-
 window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  if (!loader) return;
+
   loader.style.opacity = "0";
   loader.style.transition = "0.5s ease";
 
