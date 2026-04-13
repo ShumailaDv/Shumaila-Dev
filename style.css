@@ -259,7 +259,7 @@ form button {
   justify-content: center;
   align-items: center; 
   text-align: center; 
-  background: radial-gradient(circle at top, #0a0a0a, #050505);
+  background: transparent;
   padding: 100px 20px;
   position: relative;    
 }
