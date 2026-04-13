@@ -346,6 +346,7 @@ form button {
 
 /* MOBILE */
 @media(max-width:768px){
+  
 
   nav {
     padding: 20px;
@@ -380,13 +381,13 @@ form button {
 }
 /* CONNECT SECTION */
 .connect-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 60px;
-  background: #050505; /* solid black */
-  gap: 40px;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.connect-right {
+  justify-content: center;
 }
 
 /* LEFT SIDE */
