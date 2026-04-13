@@ -236,9 +236,9 @@ h2 {
   border-radius: 50px;
 }
 
-.progress.html { width: 95%; background: #f16529; }
-.progress.css { width: 90%; background: #2965f1; }
-.progress.js { width: 85%; background: #f7df1e; }
+.progress.html { width: 95%; background: #61dafb; }
+.progress.css { width: 90%; background: #61dafb; }
+.progress.js { width: 85%; background: #61dafb; }
 .progress.react { width: 75%; background: #61dafb; }
 /* PROJECTS */
 .projects-grid {
