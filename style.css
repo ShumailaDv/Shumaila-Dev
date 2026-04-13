@@ -381,13 +381,13 @@ form button {
 }
 /* CONNECT SECTION */
 .connect-section {
-  flex-direction: column;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.connect-right {
-  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: #050505;
+  gap: 40px;
 }
 
 /* LEFT SIDE */
@@ -416,10 +416,10 @@ form button {
 .connect-right {
   flex: 1;
   display: flex;
-  justify-content: flex-end; /* push to right */
+  justify-content: flex-end;
 }
 
-/* CONTACT BOX */
+/* BOX */
 .connect-box {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(12px);
@@ -427,19 +427,9 @@ form button {
   border-radius: 20px;
   width: 100%;
   max-width: 400px;
-
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 0 40px rgba(0,0,0,0.6);
   text-align: center;
-}
-
-.connect-box h2 {
-  margin-bottom: 10px;
-}
-
-.connect-box p {
-  color: #aaa;
-  margin-bottom: 20px;
 }
 
 /* BUTTON */
