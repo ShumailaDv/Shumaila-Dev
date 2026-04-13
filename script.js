@@ -12,52 +12,70 @@ window.addEventListener("load", () => {
   }, 500);
 });
 
+
 // ================= MOBILE MENU =================
 function toggleMenu() {
-  document.getElementById("menu").classList.toggle("active");
+  const menu = document.getElementById("menu");
+  if (!menu) return;
+
+  menu.classList.toggle("active");
 }
 
 // Auto close menu on click (mobile UX)
-document.querySelectorAll("#menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.getElementById("menu").classList.remove("active");
+const menu = document.getElementById("menu");
+
+if (menu) {
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
   });
-});
-
-// ================= TYPING EFFECT =================
-const words = ["Shumaila", "a Web Developer", "a Creative Coder"];
-let i = 0, j = 0, current = "", deleting = false;
-
-function type() {
-  current = words[i];
-
-  if (!deleting) {
-    document.getElementById("typing").textContent = current.substring(0, j++);
-    if (j > current.length) {
-      deleting = true;
-      setTimeout(type, 1200);
-      return;
-    }
-  } else {
-    document.getElementById("typing").textContent = current.substring(0, j--);
-    if (j < 0) {
-      deleting = false;
-      i = (i + 1) % words.length;
-    }
-  }
-
-  setTimeout(type, deleting ? 50 : 90);
 }
 
-type();
+
+// ================= TYPING EFFECT =================
+const typingEl = document.getElementById("typing");
+
+if (typingEl) {
+  const words = ["Shumaila", "a Web Developer", "a Creative Coder"];
+  let i = 0;
+  let j = 0;
+  let deleting = false;
+
+  function type() {
+    const current = words[i];
+
+    if (!deleting) {
+      typingEl.textContent = current.substring(0, j++);
+      
+      if (j > current.length) {
+        deleting = true;
+        setTimeout(type, 1200);
+        return;
+      }
+    } else {
+      typingEl.textContent = current.substring(0, j--);
+
+      if (j < 0) {
+        deleting = false;
+        i = (i + 1) % words.length;
+      }
+    }
+
+    setTimeout(type, deleting ? 50 : 90);
+  }
+
+  type();
+}
+
 
 // ================= SCROLL ANIMATION =================
-const elements = document.querySelectorAll(".fade");
+const fadeElements = document.querySelectorAll(".fade");
 
 const revealOnScroll = () => {
   const triggerBottom = window.innerHeight * 0.85;
 
-  elements.forEach(el => {
+  fadeElements.forEach(el => {
     const boxTop = el.getBoundingClientRect().top;
 
     if (boxTop < triggerBottom) {
@@ -67,66 +85,76 @@ const revealOnScroll = () => {
 };
 
 window.addEventListener("scroll", revealOnScroll);
-
-// Run once on load
 revealOnScroll();
 
+
 // ================= PARTICLES =================
-particlesJS("particles-js", {
-  particles: {
-    number: {
-      value: 80,
-      density: { enable: true, value_area: 800 }
-    },
-    color: { value: "#00ffc3" },
-    shape: { type: "circle" },
-    opacity: {
-      value: 0.5,
-      random: true
-    },
-    size: {
-      value: 3,
-      random: true
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#00ffc3",
-      opacity: 0.3,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: "none",
-      random: true,
-      out_mode: "out"
-    }
-  },
-  interactivity: {
-    events: {
-      onhover: {
-        enable: true,
-        mode: "grab"
+if (window.particlesJS) {
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          value_area: 800
+        }
       },
-      onclick: {
+      color: { value: "#00ffc3" },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.5,
+        random: true
+      },
+      size: {
+        value: 3,
+        random: true
+      },
+      line_linked: {
         enable: true,
-        mode: "push"
+        distance: 150,
+        color: "#00ffc3",
+        opacity: 0.3,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "none",
+        random: true,
+        out_mode: "out"
       }
     },
-    modes: {
-      grab: {
-        distance: 140,
-        line_linked: { opacity: 0.5 }
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: "grab"
+        },
+        onclick: {
+          enable: true,
+          mode: "push"
+        }
       },
-      push: {
-        particles_nb: 4
+      modes: {
+        grab: {
+          distance: 140,
+          line_linked: { opacity: 0.5 }
+        },
+        push: {
+          particles_nb: 4
+        }
       }
-    }
-  },
-  retina_detect: true
-});
+    },
+    retina_detect: true
+  });
+}
+
+
 // ================= BOOK CALL =================
 function bookCall() {
-  window.open("https://calendly.com/your-link", "_blank");
+  window.open(
+    "https://calendly.com/your-link",
+    "_blank",
+    "noopener,noreferrer"
+  );
 }
