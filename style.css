@@ -251,65 +251,97 @@ form button {
   border-radius: 5px;
 }
 
-/* BUILD SECTION (FIXED + CLEANED) */
+/* BUILD SECTION */
 .build-section {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; 
-  text-align: center; 
-  background: transparent;
+  align-items: center;
+  text-align: center;
   padding: 100px 20px;
-  position: relative;    
+
+  background: #050505; /* ✅ solid black like your site */
 }
 
+/* CARD */
 .build-box {
-  background: linear-gradient(135deg, #1a2a44, #0f1c2e);
+  background: rgba(255,255,255,0.05);
   backdrop-filter: blur(12px);
   border-radius: 20px;
   padding: 60px 40px;
-  max-width: 900px;
+  max-width: 700px;
   width: 100%;
-  box-shadow: 0 0 40px rgba(0,255,195,0.08);
-  border: 1px solid rgba(255,255,255,0.08);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
 }
 
+/* ICON */
+.build-box .icon {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* HEADING */
 .build-box h1 {
   font-size: 2.5rem;
 }
 
+/* TEXT */
 .build-box p {
   margin-top: 15px;
   color: #aaa;
+  line-height: 1.6;
 }
 
+/* INFO ROW */
 .cta-info {
-  margin: 20px 0;
+  margin: 25px 0;
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
   color: #aaa;
+  font-size: 14px;
 }
 
+/* BUTTON */
 .cta-btn {
+  display: inline-block;
   background: linear-gradient(45deg, #00ffc3, #00aaff);
-  padding: 12px 25px;
-  border: none;
+  color: #000;
+  padding: 14px 30px;
   border-radius: 30px;
-  cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
   transition: 0.3s;
 }
 
+/* BUTTON HOVER */
 .cta-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0,255,195,0.5);
+  box-shadow: 0 0 25px rgba(0,255,195,0.6);
+}
+
+/* SMALL TEXT */
+.build-box small {
+  display: block;
+  margin-top: 15px;
+  color: #666;
+}
+
+/* ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* FADE ANIMATION */
