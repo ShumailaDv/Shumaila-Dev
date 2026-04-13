@@ -253,12 +253,14 @@ form button {
 
 /* BUILD SECTION (FIXED + CLEANED) */
 .build-section {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh; 
-  padding: 20px;    
+  align-items: center; 
+  text-align: center; 
+  background: radial-gradient(circle at top, #0a0a0a, #050505);
+  padding: 100px 20px;
+  position: relative;    
 }
 
 .build-box {
