@@ -196,56 +196,58 @@ h2 {
   transform: translateY(-10px);
   box-shadow: 0 0 20px #00ffc3;
 }
-.skills-intro
-{
+.skills-intro {
   text-align: center;
   margin-bottom: 30px;
   opacity: 0.8;
-} 
-.skills-grid { max-width: 800px; margin: auto; 
-  display: flex; flex-direction: column;
-  gap: 20px;
-} 
-.skill
-{
-  background: rgba(255,255,255,0.05); 
-  padding: 15px 20px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
 }
-.skill-top
-{
+
+/* container ONLY (no background box) */
+.skills-grid {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* REMOVE BOX STYLE */
+.skill {
+  padding: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+/* name + percent row */
+.skill-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px; 
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #fff;
 }
-.bar
- {
-   width: 100%; 
-   height: 8px;
-   background: #222;
-   border-radius: 50px;
-   overflow: hidden;
- }
- .progress {
-     height: 100%; border-radius: 50px;
-    }
-.progress.html {
-     width: 95%;
-  background: #61dafb;
+
+/* bar line */
+.bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50px;
+  overflow: hidden;
 }
-.progress.css
-{
-  width: 90%; background: #61dafb; 
+
+/* fill */
+.progress {
+  height: 100%;
+  border-radius: 50px;
 }
-.progress.js {
-  width: 85%; 
-  background: #61dafb; } 
-.progress.react
-{
-  width: 80%;
-  background: #61dafb;
-}
+
+/* colors */
+.progress.html { width: 95%; background: #61dafb; }
+.progress.css { width: 90%; background: #2965f1; }
+.progress.js { width: 85%; background: #f7df1e; }
+.progress.react { width: 80%; background: #61dafb; }
+
 
 /* PROJECTS */
 .projects-grid {
