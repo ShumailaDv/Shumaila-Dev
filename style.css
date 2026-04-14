@@ -206,7 +206,8 @@ h2 {
 }
 .skills-grid {
   max-width: 800px;
-  margin: auto;
+  margin-left: 40px;  
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
