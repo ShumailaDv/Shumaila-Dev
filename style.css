@@ -182,60 +182,6 @@ nav a:hover {
   color: #aaa;
 }
 
-/* RIGHT IMAGE */
-.home-image {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* IMAGE STYLE */
-.home-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 20px;
-
-  /* Glow effect */
-  box-shadow: 0 0 40px rgba(245, 193, 108, 0.3);
-
-  /* Animation */
-  animation: float 4s ease-in-out infinite;
-  transition: 0.5s;
-}
-
-/* HOVER EFFECT */
-.home-image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 60px rgba(245, 193, 108, 0.6);
-}
-
-/* FLOATING ANIMATION */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .home {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .home-image {
-    margin-top: 40px;
-    width: 80%;
-  }
-}
-
 
 section {
   padding: 100px 20px;
