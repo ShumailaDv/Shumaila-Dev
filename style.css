@@ -545,6 +545,56 @@ form button {
     font-size: 2rem;
   }
 }
+
+/* ================= QUOTE (NO BACKGROUND PREMIUM STYLE) ================= */
+
+.resume-quote-only {
+  text-align: center;
+  margin: 80px auto 40px;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+/* Quote text */
+.quote-text {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+
+  position: relative;
+  display: inline-block;
+}
+
+/* decorative quote marks */
+.quote-text::before {
+  content: "“";
+  font-size: 50px;
+  color: rgba(0, 255, 200, 0.3);
+  position: absolute;
+  left: -30px;
+  top: -20px;
+}
+
+.quote-text::after {
+  content: "”";
+  font-size: 50px;
+  color: rgba(0, 170, 255, 0.3);
+  position: absolute;
+  right: -30px;
+  bottom: -40px;
+}
+
+/* Author */
+.quote-author {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+}
+
 /* CONNECT SECTION */
 .connect-section {
   min-height: 100vh;
