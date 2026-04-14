@@ -152,7 +152,7 @@ nav a:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(0,255,195,0.4);
 }
-/* HOME SECTION LAYOUT */
+/* /* HOME SECTION LAYOUT */
 .home {
   display: flex;
   justify-content: space-between;
@@ -180,8 +180,118 @@ nav a:hover {
 .home-content p {
   margin: 15px 0;
   color: #aaa;
+} */
+/* ================= PREMIUM HOME ================= */
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
+/* CENTER CONTENT */
+.home-content {
+  max-width: 900px;
+  margin: auto;
+  animation: fadeUp 1s ease forwards;
+}
+
+/* HEADING */
+.home-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* GRADIENT TEXT */
+.home-content h1 span {
+  background: linear-gradient(45deg, #00ffc3, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUBTEXT */
+.home-content p {
+  font-size: 18px;
+  color: #aaa;
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.cta {
+  margin-top: 30px;
+}
+
+.btn {
+  background: linear-gradient(45deg, #00ffc3, #00aaff);
+  padding: 14px 30px;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0,255,195,0.5);
+}
+
+/* OUTLINE BUTTON */
+.btn-outline {
+  border: 1px solid #00ffc3;
+  padding: 14px 30px;
+  color: #00ffc3;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #00ffc3;
+  color: #000;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  margin-top: 25px;
+  justify-content: center;
+}
+
+/* FLOATING GLOW EFFECT */
+.home::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0,255,195,0.2), transparent);
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(100px);
+  z-index: -1;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 section {
   padding: 100px 20px;
