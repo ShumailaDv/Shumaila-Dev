@@ -152,35 +152,7 @@ nav a:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(0,255,195,0.4);
 }
-/* /* HOME SECTION LAYOUT */
-.home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  padding: 0 10%;
-  position: relative;
-  z-index: 1;
-}
 
-/* LEFT CONTENT */
-.home-content {
-  max-width: 500px;
-  z-index: 2;
-}
-
-.home-content h1 {
-  font-size: 48px;
-}
-
-.home-content span {
-  color: #f5c16c;
-}
-
-.home-content p {
-  margin: 15px 0;
-  color: #aaa;
-} */
 /* ================= PREMIUM HOME ================= */
 .home {
   min-height: 100vh;
