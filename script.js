@@ -158,16 +158,3 @@ function bookCall() {
     "noopener,noreferrer"
   );
 }
-// IMAGE FADE-IN + SLIDE
-window.addEventListener("load", () => {
-  const image = document.querySelector(".home-image img");
-
-  image.style.opacity = "0";
-  image.style.transform = "translateX(100px)";
-
-  setTimeout(() => {
-    image.style.transition = "1s ease";
-    image.style.opacity = "1";
-    image.style.transform = "translateX(0)";
-  }, 300);
-});
