@@ -431,18 +431,17 @@ form button {
 }
 
 /* CARD */
-.build-box {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
+.build-box { 
+  margin: auto;
+  background: rgba(255,255,255,0.05); 
+  backdrop-filter: blur(12px); 
   border-radius: 20px;
   padding: 60px 40px;
-  max-width: 700px;
-  width: 100%;
-
+  max-width: 700px; width: 100%; 
+  
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 0 40px rgba(0,0,0,0.6);
 }
-
 /* ICON */
 .build-box .icon {
   font-size: 30px;
