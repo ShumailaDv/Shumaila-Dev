@@ -309,6 +309,90 @@ h2 {
   transform: translateY(-10px);
   box-shadow: 0 0 20px #00ffc3;
 }
+.skills-section {
+  padding: 100px 20px;
+  background: #050505;
+  text-align: center;
+}
+
+/* TITLE */
+.section-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+/* FILTER BUTTONS */
+.skill-filters {
+  margin-bottom: 40px;
+}
+
+.skill-filters button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill-filters button.active,
+.skill-filters button:hover {
+  background: #7b3ff2;
+  border-color: #7b3ff2;
+}
+
+/* GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* CARD */
+.skill-card {
+  height: 120px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  animation: float 4s ease-in-out infinite;
+}
+
+/* FLOATING */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ICON */
+.skill-card img {
+  width: 50px;
+  pointer-events: none;
+}
+
+/* HOVER 3D */
+.skill-card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 0 30px rgba(123,63,242,0.6);
+}
 
 /* frontend development */
 
