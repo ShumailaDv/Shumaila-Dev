@@ -274,7 +274,90 @@ section {
   position: relative;
   overflow: hidden;
 }
+/* ABOUT SECTION BASE */
+#about {
+  position: relative;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #050505;
+}
 
+/* GLOW BACKGROUND */
+#about::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 150, 0.25) 0%,
+    rgba(0, 255, 150, 0.08) 40%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  z-index: 0;
+  animation: glowMove 6s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+/* GLASS CONTAINER */
+#about .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 255, 150, 0.2);
+  box-shadow: 0 0 30px rgba(0, 255, 150, 0.1);
+  backdrop-filter: blur(10px);
+
+  /* animation start state */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* TITLE */
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #00ff9d;
+  letter-spacing: 1px;
+}
+
+/* TEXT */
+#about p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #dcdcdc;
+}
+
+/* ACTIVE ANIMATION STATE */
+#about .container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HOVER EFFECT */
+#about .container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 255, 150, 0.2);
+}
 /* glow layer behind about section */
 #about::before {
   content: "";
