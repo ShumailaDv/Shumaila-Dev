@@ -685,7 +685,7 @@ form button {
   background: linear-gradient(45deg, #00ffc3, #00aaff);
   padding: 14px 32px;
   border-radius: 30px;
-  color: #02121f;
+  color: #000;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
@@ -693,8 +693,8 @@ form button {
 }
 
 .cta-btn:hover {
-  background: linear-gradient(45deg, #00e6b0, #00b894);
-  transform: scale(1.05);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0,255,195,0.6);
 }
 
 /* CONNECT SECTION BACKGROUND */
