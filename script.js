@@ -1,16 +1,3 @@
-// ================= LOADER =================
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loader");
-
-  if (!loader) return;
-
-  loader.style.opacity = "0";
-  loader.style.transition = "0.5s ease";
-
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 500);
-});
 
 
 // ================= MOBILE MENU =================
@@ -37,7 +24,7 @@ if (menu) {
 const typingEl = document.getElementById("typing");
 
 if (typingEl) {
-  const words = ["Shumaila", "a Web Developer", "a Creative Coder"];
+  const words = ["Shumaila","a Frontend Developer", "a Web Developer", "a Creative Coder"];
   let i = 0;
   let j = 0;
   let deleting = false;
