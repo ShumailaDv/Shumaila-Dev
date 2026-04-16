@@ -676,11 +676,8 @@ form button {
       color: #aaa; 
    }
 
-.cta {
-  margin-top: 30px;
-}
 
-.btn {
+.resume-btn {
   background: linear-gradient(45deg, #00ffc3, #00aaff);
   padding: 14px 30px;
   color: #000;
@@ -696,6 +693,7 @@ form button {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 0 25px rgba(0,255,195,0.5);
 }
+
 /* CONNECT SECTION BACKGROUND */
 .connect-section {
   min-height: 100vh;
