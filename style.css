@@ -682,10 +682,10 @@ form button {
 }
 
 .cta-btn {
-  background: linear-gradient(45deg, #1e3a8a, #2563eb);
+  background: linear-gradient(45deg, #00ffc3, #00c896);
   padding: 14px 32px;
   border-radius: 30px;
-  color: #fff;
+  color: #02121f;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
@@ -693,7 +693,7 @@ form button {
 }
 
 .cta-btn:hover {
-  background: linear-gradient(45deg, #2563eb, #1e40af);
+  background: linear-gradient(45deg, #00e6b0, #00b894);
   transform: scale(1.05);
 }
 
