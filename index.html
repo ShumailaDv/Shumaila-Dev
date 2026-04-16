@@ -271,51 +271,60 @@
 </section>
   
 
-<!-- CONTACT SECTION -->
-<section class="connect-section">
+<!-- CONNECT SECTION -->
+<section id="connect" class="connect-section">
 
-  <div class="connect-wrapper">
+  <div class="connect-container">
 
-    <!-- LEFT -->
-    <div class="connect-left">
-      <h1>Let’s Connect</h1>
-      <h2>Build Something Great Together</h2>
-
+    <!-- LEFT SIDE -->
+    <div class="connect-info">
+      <h2>Let's Connect</h2>
       <p>
-        I’m available for freelance work, collaborations, and full-time opportunities.
-        Let’s create something modern, fast, and impactful.
+        I'm open to freelance projects, collaborations, or just a friendly chat.
+        Feel free to reach out anytime.
       </p>
+
+      <div class="info-box">
+        <p><span>Email:</span> yourmail@gmail.com</p>
+        <p><span>Phone:</span> +92 300 0000000</p>
+        <p><span>Location:</span> Pakistan</p>
+      </div>
     </div>
 
-    <!-- RIGHT BOX -->
-    <div class="connect-right">
-
-      <div class="connect-box">
-
-        <h2>Contact Me</h2>
-
-        <p>Have a project in mind? Let’s talk.</p>
-
-        <a href="mailto:shumailab011@gmail.com" class="connect-btn">
-          Send Message
-        </a>
-
+    <!-- RIGHT SIDE FORM -->
+    <form class="connect-form">
+      <div class="input-box">
+        <label>Name</label>
+        <input type="text" placeholder="Your Name">
       </div>
 
-      <!-- RESUME BOX -->
-      <div class="resume-box">
-        <p>My Resume</p>
-        <a href="resume.pdf" download class="resume-btn">
-          Download
-        </a>
+      <div class="input-box">
+        <label>Email</label>
+        <input type="email" placeholder="your.email@example.com">
       </div>
 
-    </div>
+      <div class="input-box">
+        <label>Subject</label>
+        <input type="text" placeholder="Project Inquiry">
+      </div>
+
+      <div class="input-box">
+        <label>Message</label>
+        <textarea placeholder="Tell me about your project..."></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
 
   </div>
 
-</section>
+  <!-- BOTTOM BAR -->
+  <div class="connect-bottom">
+    <p>Want to see my work history?</p>
+    <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+  </div>
 
+</section>
 <!-- EMAIL JS -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
