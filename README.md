@@ -11,6 +11,7 @@ Skills Progress Bars
 Resume Section
 Portfolio Projects Grid
 Services Section
+Google Meet section 
 Contact Form
 Responsive Design
 
@@ -22,4 +23,4 @@ JavaScript
 
 ## Author
 
-Shahzad Bukhari
+Shumaila Mujahid 
