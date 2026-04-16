@@ -681,21 +681,22 @@ form button {
   color: #aaa;
 }
 
-.resume-btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background: #fff;
-  color: #000;
-  text-decoration: none;
+.cta-btn {
+  background: linear-gradient(45deg, #1e3a8a, #2563eb);
+  padding: 14px 32px;
+  border-radius: 30px;
+  color: #fff;
   font-weight: bold;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
 }
 
-.resume-btn:hover {
-  background: #ccc;
-  transform: translateY(-2px);
+.cta-btn:hover {
+  background: linear-gradient(45deg, #2563eb, #1e40af);
+  transform: scale(1.05);
 }
+
 /* CONNECT SECTION BACKGROUND */
 .connect-section {
   min-height: 100vh;
