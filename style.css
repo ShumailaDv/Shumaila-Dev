@@ -650,8 +650,48 @@ form button {
     font-size: 2rem;
   }
 }
+/* RESUME */
+.resume-section {
+  width: 100%;
+  background: #000; /* black background */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.resume-container {
+  text-align: center;
+  color: #fff;
+}
 
+.resume-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.resume-subtitle {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #ccc;
+  transform: translateY(-2px);
+}
 /* CONNECT SECTION BACKGROUND */
 .connect-section {
   min-height: 100vh;
