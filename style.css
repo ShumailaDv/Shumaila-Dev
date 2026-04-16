@@ -521,7 +521,7 @@ form button {
   padding: 60px 40px;
   border-radius: 20px;
 
-  background: linear-gradient(135deg, #0a1a2f, #0f2a44);
+  background: linear-gradient(135deg, #050505, #0a0a0a);
   border: 1px solid rgba(255,255,255,0.08);
 
   backdrop-filter: blur(20px);
