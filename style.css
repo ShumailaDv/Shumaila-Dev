@@ -892,21 +892,6 @@ form button {
 }
 
 /* PREMIUM FOOTER */
-.premium-footer {
-  position: relative;
-  width: 100%;
-  background: linear-gradient(180deg, #000000, #000000);
-  padding: 30px 20px;
-  text-align: center;
-  overflow: hidden;
-  border-top: 1px solid rgba(0, 255, 195, 0.15);
-}
-
-/* CONTAINER */
-.footer-container {
-  max-width: 900px;
-  margin: auto;
-}
 
 /* MAIN TEXT */
 .footer-text {
