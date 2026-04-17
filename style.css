@@ -655,7 +655,7 @@ form button {
 /* RESUME */
 .resume-section {
   width: 100%;
-  min-height: 80vh; /* better height like your image */
+  min-height: 80vh; 
   background: linear-gradient(180deg, #000000, #020617); /* matches dark neon theme */
   padding: 80px 20px;
 
