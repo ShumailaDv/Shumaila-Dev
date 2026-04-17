@@ -8,7 +8,8 @@
 body {
   background: #050505;
   color: #fff;
-  overflow-x: hidden;
+  overflow-x: hidden;Fresume
+  
 }
 
 /* PARTICLES */
@@ -654,7 +655,7 @@ form button {
 /* RESUME */ 
 .resume-section {
   width: 100%;
-  min-height: 600vh; /* No full screen height */ 
+  min-height: 60vh; /* No full screen height */ 
   background: #000; 
   padding: 60px 20px; 
   display: flex; 
