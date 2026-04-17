@@ -654,7 +654,7 @@ form button {
 /* RESUME */ 
 .resume-section {
   width: 100%;
-  min-height: 100vh; /* ensures full screen height */ 
+  min-height: 600vh; /* No full screen height */ 
   background: #000; 
   padding: 60px 20px; 
   display: flex; 
