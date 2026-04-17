@@ -202,6 +202,7 @@ const observer = new IntersectionObserver(
   }
 );
 
+
 observer.observe(aboutBox);
 // AUTO YEAR UPDATE
 document.querySelector(".footer-text").innerHTML =
