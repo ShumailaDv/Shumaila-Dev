@@ -958,3 +958,8 @@ form button {
   box-shadow: 0 -10px 30px rgba(0, 255, 195, 0.15);
   transition: 0.3s;
 }
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
