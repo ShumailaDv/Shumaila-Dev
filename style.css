@@ -895,7 +895,7 @@ form button {
 .premium-footer {
   position: relative;
   width: 100%;
-  background: linear-gradient(180deg, #020617, #000000);
+  background: linear-gradient(180deg, #000000, #000000);
   padding: 30px 20px;
   text-align: center;
   overflow: hidden;
