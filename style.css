@@ -652,49 +652,81 @@ form button {
     font-size: 2rem;
   }
 }
-/* RESUME */ 
+/* RESUME */
 .resume-section {
   width: 100%;
-  min-height: 60vh; /* No full screen height */ 
-  background: #000; 
-  padding: 60px 20px; 
-  display: flex; 
-  justify-content: center; 
+  min-height: 80vh; /* better height like your image */
+  background: linear-gradient(180deg, #000000, #020617); /* matches dark neon theme */
+  padding: 80px 20px;
+
+  display: flex;
+  justify-content: center;
   align-items: center;
-} 
-   .resume-container { 
-     text-align: center; 
-     color: #fff;
-     max-width: 600px; /* keeps content nicely centered */ 
-     width: 100%; 
-                                                         }
-.resume-title { font-size: 36px; 
-      margin-bottom: 10px; 
-      letter-spacing: 1px;
-  } 
- .resume-subtitle { font-size: 16px;
-      margin-bottom: 25px; 
-      color: #aaa; 
-   }
+  text-align: center;
+}
 
+.resume-container {
+  color: #fff;
+  max-width: 600px;
+  width: 100%;
+}
 
+/* Title */
+.resume-title {
+  font-size: 38px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+/* Subtitle */
+.resume-subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #9ca3af;
+}
+
+/* Button */
 .resume-btn {
   background: linear-gradient(45deg, #00ffc3, #00aaff);
-  padding: 14px 30px;
+  padding: 14px 32px;
   color: #000;
   border-radius: 30px;
   text-decoration: none;
-  margin: 10px;
   font-weight: bold;
   display: inline-block;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
-.btn:hover {
+/* FIXED hover (this was your bug) */
+.resume-btn:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 0 25px rgba(0,255,195,0.5);
+  box-shadow: 0 0 25px rgba(0,255,195,0.6);
 }
 
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .resume-section {
+    min-height: 70vh;
+    padding: 60px 15px;
+  }
+
+  .resume-title {
+    font-size: 28px;
+  }
+
+  .resume-subtitle {
+    font-size: 14px;
+  }
+
+  .resume-btn {
+    padding: 12px 26px;
+    font-size: 14px;
+  }
+}
+.resume-section {
+  position: relative;
+  z-index: 1;
+}
 /* CONNECT SECTION BACKGROUND */
 
 /* CONNECT SECTION (NEON THEME FIXED) */
