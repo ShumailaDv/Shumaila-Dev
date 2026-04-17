@@ -181,7 +181,7 @@ cards.forEach(card => {
 // ================= BOOK CALL =================
 function bookCall() {
   window.open(
-    "https://calendly.com/your-link",
+    "https://cal.com/shumaila-dev/secret",
     "_blank",
     "noopener,noreferrer"
   );
