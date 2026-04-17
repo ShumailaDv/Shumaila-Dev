@@ -278,12 +278,15 @@ section {
   font-size: 40px;
   text-align: center;
   margin-bottom: 20px;
+  color: #ffffff; /* This makes "Who is" white */
+}
 
+/* Only target the name */
+.about-section-title b {
   background: linear-gradient(45deg, #00ffc3, #00aaff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 #about .container {
   display: flex;
   flex-direction: column;
