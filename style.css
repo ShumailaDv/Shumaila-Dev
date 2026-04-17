@@ -655,9 +655,9 @@ form button {
 /* RESUME */
 .resume-section {
   width: 100%;
-  min-height: 80vh; 
+  min-height: auto; 
   background: linear-gradient(180deg, #000000, #020617); /* matches dark neon theme */
-  padding: 80px 20px;
+  padding: 60px 20px;
 
   display: flex;
   justify-content: center;
@@ -666,7 +666,7 @@ form button {
 }
 
 .resume-container {
-  color: #fff;
+  color: #00ffc3;
   max-width: 600px;
   width: 100%;
 }
@@ -697,7 +697,7 @@ form button {
   transition: all 0.3s ease;
 }
 
-/* FIXED hover (this was your bug) */
+ 
 .resume-btn:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 0 25px rgba(0,255,195,0.6);
