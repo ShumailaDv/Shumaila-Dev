@@ -729,7 +729,7 @@ form button {
 }
 /* CONNECT SECTION BACKGROUND */
 
-/* CONNECT SECTION (NEON THEME FIXED) */
+/* CONNECT SECTION ( NEON THEME ) */
 .connect-section {
   width: 100%;
   min-height: 100vh;
@@ -807,7 +807,7 @@ form button {
   color: #888;
 }
 
-/* BUTTON (MATCH SITE BUTTONS) */
+/* BUTTON (MATCH build BUTTONS) */
 .connect-form button {
   width: 100%;
   padding: 14px;
