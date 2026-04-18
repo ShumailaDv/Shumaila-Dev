@@ -317,16 +317,6 @@ h2 {
 
 
 /* Optional soft outer glow */
-.about-box::after {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border-radius: 20px;
-  background: linear-gradient(45deg, #00ffc3, #00aaff);
-  filter: blur(15px);
-  opacity: 0.3;
-  z-index: -2;
-}
 
 
 /* SERVICES */
