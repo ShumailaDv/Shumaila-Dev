@@ -271,10 +271,7 @@ section {
   margin: 0 auto;
   padding: 0 20px;
   
-   backdrop-filter: blur(20px);
-  box-shadow: 0 0 50px rgba(0,255,195,0.1);
-
-  transition: 0.3s ease;
+   
 }
 #about {
   text-align: center;
