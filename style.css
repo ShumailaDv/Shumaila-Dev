@@ -324,7 +324,7 @@ h2 {
 }
 
 #services h2 b {
-  color: #00ffc3;
+  color: #ffffff;
 }
 .services-grid {
   display: grid;
@@ -432,7 +432,7 @@ h2 {
 /* frontend development */
 
 #skills h2 {
-  color: #00ffc3;
+  color: #fff;
 }
 .skills-intro {
   text-align: center;
@@ -488,7 +488,7 @@ h2 {
 /* PROJECTS */
 
 #projects h2 {
-  color: #00ffc3;
+  color: #fff;
 }
 .projects-grid {
   display: grid;
@@ -702,7 +702,7 @@ form button {
 }
 
 .resume-container {
-  color: #00ffc3;
+  color: #fff;
   max-width: 600px;
   width: 100%;
 }
