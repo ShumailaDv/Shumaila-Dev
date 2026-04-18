@@ -315,31 +315,6 @@ h2 {
 }
 /*    */
 
-.about-box {
-  position: relative;
-  border-radius: 20px;
-  padding: 40px;
-  z-index: 1;
-}
-
-/* Neon Glow Border */
-.about-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  padding: 1px; /* thickness of border */
-
-  background: linear-gradient(45deg, #00ffc3, #00aaff);
-  
-  -webkit-mask: 
-    linear-gradient(#000 0 0) content-box, 
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-
-  z-index: -1;
-}
 
 /* Optional soft outer glow */
 .about-box::after {
