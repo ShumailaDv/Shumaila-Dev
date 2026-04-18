@@ -301,13 +301,20 @@
     </div>
 
     <!-- RIGHT -->
-    <form class="connect-form">
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="your.email@example.com">
-      <input type="text" placeholder="Project Inquiry">
-      <textarea rows="5" placeholder="Tell me about your project..."></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <form id="contact-form" class="connect-form">
+
+  <input type="text" name="from_name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="your.email@example.com" required>
+
+  <input type="text" name="subject" placeholder="Project Inquiry" required>
+
+  <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+  <button type="submit">Send Message</button>
+
+</form>
+   
 
   </div>
 </section>
