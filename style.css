@@ -517,19 +517,17 @@ h2 {
   color: #00ffc3;
   text-decoration: none;
 }
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-.card img {
-  transition: 0.4s;
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00ffc3;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
 }
 
-.card:hover img {
-  transform: scale(1.05);
+.card:hover h3 {
+  color: #ffffff;
 }
 /* TESTIMONIAL */
 .testimonial {
