@@ -499,6 +499,12 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+/* Mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .card {
   position: relative;
