@@ -336,8 +336,13 @@ document.getElementById("contact-form").addEventListener("submit", function(e){
     message: this[2].value
   }).then(() => {
     alert("Message Sent Successfully!");
+    document.getElementById("contact-form").reset();
+
+  }, (error) => {
+    alert("Failed to send message: " + error.text);
   });
 });
+  
 </script>
 
 <!-- MAIN JS -->
