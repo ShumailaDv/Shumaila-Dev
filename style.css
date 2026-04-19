@@ -520,13 +520,13 @@ h2 {
 }
 
 .card a {
-  color: #ffffff;
+  color: #00ffc3;
   text-decoration: none;
 }
 .card h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #00ffc3;
+  color: #ffffff;
   margin-bottom: 10px;
   letter-spacing: 0.5px;
   transition: 0.3s;
