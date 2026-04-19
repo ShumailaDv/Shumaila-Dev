@@ -324,13 +324,13 @@
 
 <script>
 (function(){
-  emailjs.init("YOUR_PUBLIC_KEY");
+  emailjs.init("2qZ1E-rVRcvpz93jX");
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(e){
   e.preventDefault();
 
-  emailjs.send("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",{
+  emailjs.send("service_pi94ghm","template_atqrhmf",{
     from_name: this[0].value,
     email: this[1].value,
     message: this[2].value
