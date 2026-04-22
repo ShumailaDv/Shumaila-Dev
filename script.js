@@ -23,7 +23,7 @@ if (menu) {
 const typingEl = document.getElementById("typing");
 
 if (typingEl) {
-  const words = ["Shumaila","a Frontend Developer", "a Web Developer", "a Creative Coder"];
+  const words = ["Shumaila", "a Web Developer", "a Creative Coder"];
   let i = 0;
   let j = 0;
   let deleting = false;
