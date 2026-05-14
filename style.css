@@ -508,9 +508,8 @@ nav a:hover {
   opacity: 0.8;
 }
 .skills-grid {
-  max-width: 800px;
-  margin-left: 40px;  
-  margin-right: auto;
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
