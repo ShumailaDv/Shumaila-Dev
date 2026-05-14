@@ -207,3 +207,32 @@ if (aboutBox) {
 // AUTO YEAR UPDATE
 document.querySelector(".footer-text").innerHTML =
   `© ${new Date().getFullYear()} <span>Shumaila Dev</span>. All Rights Reserved.`;
+
+//FRONTEND DEVELOPMENT
+
+const progressBars = document.querySelectorAll(".progress");
+
+const animateSkills = () => {
+  progressBars.forEach(bar => {
+    const width = bar.style.width;
+    bar.style.width = "0";
+
+    setTimeout(() => {
+      bar.style.width = width;
+    }, 200);
+  });
+};
+
+const skillsSection = document.querySelector("#skills");
+
+if (skillsSection) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateSkills();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(skillsSection);
+}
