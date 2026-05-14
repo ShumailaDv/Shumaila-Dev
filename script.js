@@ -189,23 +189,21 @@ function bookCall() {
 }
 
 // ABOUT SECTION ANIMATION ON SCROLL
-const aboutBox = document.querySelector("#about .container");
+const aboutBox = document.querySelector(".about-wrapper");
 
-const observer = new IntersectionObserver(
-  (entries) => {
+if (aboutBox) {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
       }
     });
-  },
-  {
-    threshold: 0.2,
-  }
-);
+  }, {
+    threshold: 0.2
+  });
 
-
-observer.observe(aboutBox);
+  observer.observe(aboutBox);
+}
 // AUTO YEAR UPDATE
 document.querySelector(".footer-text").innerHTML =
   `© ${new Date().getFullYear()} <span>Shumaila Dev</span>. All Rights Reserved.`;
