@@ -317,7 +317,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;   /* reduced from 30px */
+  gap: 60px;   /* reduced from 30px */
   flex-wrap: nowrap;
 }
 
