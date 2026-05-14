@@ -118,6 +118,7 @@ nav a:hover {
 }
 
 /* SOCIAL ICONS */
+
 .social-icons {
   display: flex;
   gap: 10px;
@@ -257,135 +258,109 @@ nav a:hover {
     transform: translateY(0);
   }
 }
+/* ================= ABOUT SECTION ================= */
 
-/* About */
-
-section {
-  padding: 100px 20px;
-}
-
-/* CENTER CONTAINER SYSTEM */
-.container {
-  width: 100%;
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 0 20px;
-  
-   
-}
 #about {
-  text-align: center;
-}
-.about-section-title {
-  font-size: 62px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  line-height: 1.1;
+  padding: 120px 20px;
+  background: transparent;
 }
 
-/* Only target the name */
-.about-section-title b {
-  background: linear-gradient(45deg, #00ffc3, #00aaff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-#about h2 {
-  text-align: center;
-}
-/* HEADINGS */
-h2 {
-  margin-bottom: 20px;
-}
-
-/* GLASS CARD */
-.glass {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 40px;
-}
-#about .container:hover {
-  box-shadow: 0 0 40px rgba(0,255,195,0.4);
-  transform: translateY(-5px);
-}
-/*    */
-
-/* ABOUT IMAGE LAYOUT */
 .about-wrapper {
-  display: flex;
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 60px;   /* reduced from 30px */
-  flex-wrap: nowrap;
+  gap: 70px;
 }
 
+/* IMAGE SIDE */
 .about-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 82%;
+  background: linear-gradient(to bottom, transparent, #00ffc3, transparent);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,255,195,0.7);
 }
 
 .about-image img {
-  width: 400px;
+  width: 460px;
   max-width: 100%;
   object-fit: contain;
-  background: transparent;
-  position: relative;
-  z-index: 2;
-
   filter:
-    drop-shadow(0 0 5px rgba(0,255,195,0.7))
-    drop-shadow(0 0 15px rgba(0,255,195,0.4))
-    drop-shadow(0 0 30px rgba(0,255,195,0.2));
-
-  transition: all 0.4s ease;
+    drop-shadow(0 0 8px rgba(0,255,195,0.7))
+    drop-shadow(0 0 25px rgba(0,255,195,0.35));
+  transition: 0.4s ease;
 }
 
 .about-image img:hover {
   transform: scale(1.03);
 }
 
-.about-image img:hover {
-  transform: scale(1.05);
-}
-
+/* TEXT SIDE */
 .about-content-box {
-  flex: 1;
-  max-width: 600px;
-  padding: 45px;
+  width: 100%;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 55px;
   border-radius: 28px;
 
   background: rgba(255,255,255,0.03);
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(20px);
 
-  border: 1px solid rgba(0,255,195,0.18);
+  border: 1px solid rgba(0,255,195,0.14);
 
   box-shadow:
-    0 0 25px rgba(0,255,195,0.08),
+    0 0 35px rgba(0,255,195,0.08),
     inset 0 0 20px rgba(255,255,255,0.02);
 
   text-align: left;
 }
 
+/* TITLE */
+.about-section-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.about-section-title b {
+  background: linear-gradient(45deg, #00ffc3, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about-content-box p {
+  font-size: 17px;
   line-height: 1.9;
   color: #ddd;
-  font-size: 17px;
+  margin-bottom: 18px;
 }
 
 .about-content-box b {
   color: #00ffc3;
 }
 
-@media (max-width: 900px) {
+/* MOBILE */
+@media (max-width: 992px) {
   .about-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 45px;
   }
 
   .about-image {
@@ -393,32 +368,19 @@ h2 {
   }
 
   .about-image::before {
-    width: 280px;
-    height: 360px;
-    border-radius: 24px;
-  }
-
-  .about-image img {
-    width: 260px;
+    display: none;
   }
 
   .about-content-box {
-    max-width: 100%;
-    padding: 30px;
+    min-height: auto;
+    padding: 35px;
     text-align: center;
   }
 
   .about-section-title {
     font-size: 42px;
-    line-height: 1.2;
-  }
-
-  .about-content-box p {
-    font-size: 15px;
-    line-height: 1.8;
   }
 }
-
 /* Optional soft outer glow */
 
 
