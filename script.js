@@ -135,23 +135,7 @@ if (window.particlesJS) {
   });
 }
 
-<script>
-const revealElements = document.querySelectorAll(
-  '.about-image, .about-content-box'
-);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-}, {
-  threshold: 0.25
-});
-
-revealElements.forEach(el => observer.observe(el));
-</script>
 // FILTER
 const filterButtons = document.querySelectorAll('.skill-filters button');
 const cards = document.querySelectorAll('.skill-card');
