@@ -552,7 +552,6 @@ nav a:hover {
 .progress.react { width: 80%; background: #61dafb; }
 
 
-/* PROJECTS */
 /* ================= PREMIUM PROJECTS SECTION ================= */
 
 #projects {
@@ -673,8 +672,8 @@ nav a:hover {
 }
 
 .live-btn {
-  background: linear-gradient(45deg, #00ffc3, #00aaff);
-  color: #00ffc3;
+  background: #00ffc3;
+  color: #000;
 }
 
 .code-btn {
