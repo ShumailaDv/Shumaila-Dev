@@ -347,14 +347,7 @@ h2 {
 .about-image img:hover {
   transform: scale(1.03);
 }
-.about-image::before {
-  content: "";
-  position: absolute;
-  inset: 40px;
-  border: 2px solid rgba(0,255,195,0.45);
-  border-radius: 50%;
-  filter: blur(2px);
-}
+
 .about-image img:hover {
   transform: scale(1.05);
 }
