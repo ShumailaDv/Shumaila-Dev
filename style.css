@@ -705,9 +705,6 @@ form button {
   border: 1px solid rgba(0, 255, 195, 0.15);
   box-shadow: 0 0 50px rgba(0, 255, 195, 0.08);
 
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 50px rgba(0,255,195,0.1);
-
   transition: 0.3s ease;
 }
 
