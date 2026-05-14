@@ -672,8 +672,15 @@ nav a:hover {
 }
 
 .live-btn {
-  background: #00ffc3;
+  background: linear-gradient(45deg, #00ffc3, #00aaff);
+  padding: 12px 25px;
   color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  border: none;
 }
 
 .code-btn {
