@@ -586,7 +586,7 @@ nav a:hover {
 
 /* GRID */
 .projects-grid {
-  max-width: 1250px;
+  max-width: 1100px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
