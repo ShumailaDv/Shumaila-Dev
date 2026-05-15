@@ -210,11 +210,13 @@ document.querySelector(".footer-text").innerHTML =
 
 //FRONTEND DEVELOPMENT
 
+// FRONTEND DEVELOPMENT
 const progressBars = document.querySelectorAll(".progress");
 
 const animateSkills = () => {
   progressBars.forEach(bar => {
-    const width = bar.style.width;
+    const width = bar.dataset.width;
+
     bar.style.width = "0";
 
     setTimeout(() => {
