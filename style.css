@@ -380,6 +380,8 @@ nav a:hover {
 #services h2 {
   color: #ffffff;
   text-align: center;
+  margin-bottom: 15px;
+
 }
 
 #services h2 b {
