@@ -400,5 +400,13 @@ document.getElementById("contact-form").addEventListener("submit", function(e){
   <div class="footer-glow-line"></div>
 </footer>
 
+<script>
+window.addEventListener("load", function () {
+  document.querySelectorAll(".progress").forEach(bar => {
+    bar.style.width = bar.dataset.width;
+  });
+});
+</script>
+  
 </body>
 </html>
