@@ -372,7 +372,11 @@ nav a:hover {
 
 
 /* SERVICES */
-
+#services {
+  padding: 100px 5%;
+  max-width: 1250px;
+  margin: auto;
+}
 #services h2 {
   color: #ffffff;
   text-align: center;
