@@ -222,6 +222,7 @@ const animateSkills = () => {
     }
   });
 };
+window.addEventListener("load", animateSkills);
 
 const skillsSection = document.querySelector("#skills");
 
