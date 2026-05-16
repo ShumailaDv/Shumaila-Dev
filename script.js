@@ -215,13 +215,11 @@ const progressBars = document.querySelectorAll(".progress");
 
 const animateSkills = () => {
   progressBars.forEach(bar => {
-    const width = bar.dataset.width;
+    const width = bar.getAttribute("data-width");
 
-    bar.style.width = "0";
-
-    setTimeout(() => {
+    if (width) {
       bar.style.width = width;
-    }, 200);
+    }
   });
 };
 
