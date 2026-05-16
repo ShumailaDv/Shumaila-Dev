@@ -222,9 +222,8 @@ const animateSkills = () => {
     }
   });
 };
-window.addEventListener("load", animateSkills);
 
-const skillsSection = document.querySelector("#skills");
+const skillsSection = document.querySelector("#skills")
 
 if (skillsSection) {
   const observer = new IntersectionObserver((entries) => {
