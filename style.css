@@ -552,25 +552,25 @@ nav a:hover {
 
 /* glowing colors */
 .progress.html {
-  
+  width: 95%;
   background: #61dafb;
   box-shadow: 0 0 14px #61dafb;
 }
 
 .progress.css {
-  
+  width: 90%;
   background: #2965f1;
   box-shadow: 0 0 14px #2965f1;
 }
 
 .progress.js {
-  
+  width: 85%;
   background: #f7df1e;
   box-shadow: 0 0 14px #f7df1e;
 }
 
 .progress.react {
-  
+  width: 75%;
   background: #00d8ff;
   box-shadow: 0 0 14px #00d8ff;
 }
