@@ -549,8 +549,8 @@ nav a:hover {
   border-radius: 50px;
   transition: width 2s ease-in-out;
 }
-
 /* glowing colors */
+
 .progress.html.animate {
   width: 95%;
   background: #61dafb;
