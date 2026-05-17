@@ -209,4 +209,10 @@ document.querySelector(".footer-text").innerHTML =
   `© ${new Date().getFullYear()} <span>Shumaila Dev</span>. All Rights Reserved.`;
 
 //FRONTEND DEVELOPMENT
+const progressBars = document.querySelectorAll('.progress');
 
+window.addEventListener('load', () => {
+  progressBars.forEach(bar => {
+    bar.classList.add('animate');
+  });
+});
