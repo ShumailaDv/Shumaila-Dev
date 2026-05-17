@@ -551,7 +551,7 @@ nav a:hover {
 }
 
 /* glowing colors */
-.progress.html {
+.progress.html.animate {
   width: 95%;
   background: #61dafb;
   box-shadow: 0 0 14px #61dafb;
