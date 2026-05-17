@@ -551,25 +551,25 @@ nav a:hover {
 }
 
 /* glowing colors */
-.skill.show.progress.html {
+.progress.html {
   width: 95%;
   background: #61dafb;
   box-shadow: 0 0 14px #61dafb;
 }
 
-.skill.show.progress.css {
+.progress.css {
   width: 90%;
   background: #2965f1;
   box-shadow: 0 0 14px #2965f1;
 }
 
-.skill.show.progress.js {
+.progress.js {
   width: 85%;
   background: #f7df1e;
   box-shadow: 0 0 14px #f7df1e;
 }
 
-.skill.show.progress.react {
+.progress.react {
   width: 75%;
   background: #00d8ff;
   box-shadow: 0 0 14px #00d8ff;
