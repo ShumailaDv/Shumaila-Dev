@@ -557,19 +557,19 @@ nav a:hover {
   box-shadow: 0 0 14px #61dafb;
 }
 
-.progress.css {
+.progress.css.animate {
   width: 90%;
   background: #2965f1;
   box-shadow: 0 0 14px #2965f1;
 }
 
-.progress.js {
+.progress.js.animate {
   width: 85%;
   background: #f7df1e;
   box-shadow: 0 0 14px #f7df1e;
 }
 
-.progress.react {
+.progress.react.animate {
   width: 75%;
   background: #00d8ff;
   box-shadow: 0 0 14px #00d8ff;
