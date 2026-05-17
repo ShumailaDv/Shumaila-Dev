@@ -210,29 +210,3 @@ document.querySelector(".footer-text").innerHTML =
 
 //FRONTEND DEVELOPMENT
 
-// FRONTEND DEVELOPMENT
-const progressBars = document.querySelectorAll(".progress");
-
-const animateSkills = () => {
-  progressBars.forEach(bar => {
-    const width = bar.getAttribute("data-width");
-
-    if (width) {
-      bar.style.width = width;
-    }
-  });
-};
-
-const skillsSection = document.querySelector("#skills")
-
-if (skillsSection) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateSkills();
-      }
-    });
-  }, { threshold: 0.4 });
-
-  observer.observe(skillsSection);
-}
