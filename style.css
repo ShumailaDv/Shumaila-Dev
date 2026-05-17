@@ -672,7 +672,37 @@ nav a:hover {
   overflow: hidden;
   transition: 0.4s ease;
 }
+/* ================= PROJECT CARD ANIMATION ================= */
 
+/* Initial hidden state */
+.projects-grid .card {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
+
+/* Animate state */
+.projects-grid.show .card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay for each card */
+.projects-grid.show .card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.projects-grid.show .card:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.projects-grid.show .card:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+.projects-grid.show .card:nth-child(4) {
+  transition-delay: 0.7s;
+}
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 35px rgba(0,255,195,0.20);
