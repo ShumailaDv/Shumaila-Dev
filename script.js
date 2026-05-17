@@ -210,16 +210,10 @@ document.querySelector(".footer-text").innerHTML =
 
 //FRONTEND DEVELOPMENT
 
-const skillsSection = document.querySelector('#skills');
 const progressBars = document.querySelectorAll('.progress');
 
-window.addEventListener('scroll', () => {
-  const sectionPos = skillsSection.getBoundingClientRect().top;
-  const screenPos = window.innerHeight / 1.3;
-
-  if(sectionPos < screenPos){
-    progressBars.forEach(bar => {
-      bar.classList.add('animate');
-    });
-  }
+window.addEventListener('load', () => {
+  progressBars.forEach(bar => {
+    bar.classList.add('animate');
+  });
 });
