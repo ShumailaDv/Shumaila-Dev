@@ -675,7 +675,7 @@ nav a:hover {
   border-radius: 18px;
   overflow: hidden;
 
-  min-height: 450px;
+  min-height: 420px;
 
   transition: 0.4s ease;
 }
