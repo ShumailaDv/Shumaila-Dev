@@ -228,3 +228,25 @@ function animateSkills() {
 
 window.addEventListener("scroll", animateSkills);
 window.addEventListener("load", animateSkills);
+// ================= PROJECT SECTION ANIMATION =================
+
+const projectsGrid = document.querySelector(".projects-grid");
+
+if (projectsGrid) {
+
+  const projectObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+
+    });
+
+  }, {
+    threshold: 0.2
+  });
+
+  projectObserver.observe(projectsGrid);
+}
