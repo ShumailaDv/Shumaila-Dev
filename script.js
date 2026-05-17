@@ -210,10 +210,21 @@ document.querySelector(".footer-text").innerHTML =
 
 //FRONTEND DEVELOPMENT
 
-const progressBars = document.querySelectorAll('.progress');
+const skillsSection = document.querySelector("#skills");
+const progressBars = document.querySelectorAll(".progress");
 
-window.addEventListener('load', () => {
-  progressBars.forEach(bar => {
-    bar.classList.add('animate');
-  });
-});
+function animateSkills() {
+  const sectionTop = skillsSection.getBoundingClientRect().top;
+  const triggerPoint = window.innerHeight - 100;
+
+  if (sectionTop < triggerPoint) {
+    progressBars.forEach((bar) => {
+      bar.classList.add("animate");
+    });
+
+    window.removeEventListener("scroll", animateSkills);
+  }
+}
+
+window.addEventListener("scroll", animateSkills);
+window.addEventListener("load", animateSkills);
